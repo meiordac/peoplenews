@@ -1,0 +1,4 @@
+peoplenews
+==========
+
+Software engienieering project
