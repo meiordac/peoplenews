@@ -1,0 +1,29 @@
+{# src/Blogger/BlogBundle/Resources/views/Page/search.html.twig #}
+{% extends 'BloggerBlogBundle::layout.html.twig' %}
+
+{% block title %}Search{% endblock%}
+
+{% block body %}
+    <header>
+        <h1>Search in for a specific place</h1>
+    </header>
+    <article>
+ <form name="search" method="post" action="<?=$PHP_SELF?>">
+ Seach for: <input type="text" name="find" /> in 
+ <Select NAME="field">
+ <Option VALUE="country">Country</option>
+ <Option VALUE="city">City</option>
+ <Option VALUE="continent">Continent</option>
+ 
+ </Select>
+ <input type="hidden" name="searching" value="yes" />
+ <input type="submit" name="search" value="Search" />
+ </form>
+        <p>
+        <br>
+     Search in a specific place not the one you gave when you get registered!!
+     </br>
+        </p>
+        
+    </article>
+{% endblock %}
