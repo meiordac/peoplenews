@@ -1,0 +1,17 @@
+{# src/Blogger/BlogBundle/Resources/views/Page/about.html.twig #}
+{% extends 'BloggerBlogBundle::layout.html.twig' %}
+
+{% block title %}About{% endblock%}
+
+{% block body %}
+    <header>
+        <h1>About peopleNews startup</h1>
+    </header>
+    <article>
+        <p>We are an startup that wants to change the relationship that people has with the information, specifically the news. We want that everybody have an space to share what happens in their local areas, communities, cities or countries.
+        <br>
+        The idea is that when you are register you can start sharing local news with the people that lives close to you
+        <br>
+        We are a group of 3 students from the school of engenieering of the PUC, Chile</p>
+    </article>
+{% endblock %}
