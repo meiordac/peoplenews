@@ -1,0 +1,45 @@
+{# src/Blogger/BlogBundle/Resources/views/Page/index2.html.twig #}
+{% extends 'BloggerBlogBundle::layout.html.twig' %}
+
+{% block body %}
+
+
+<table>
+  {% for i in range(0, blogs|length-1, 2) %}
+  <tr>
+    <td width="405px">
+                <h2><a href="{{ path('BloggerBlogBundle_blog_show', { 'id': blogs[i].id }) }}">{{ blogs[i].title }}</a></h2>
+            
+     <img width="100%"  src="{{ asset(['images/', blogs[i].image]|join) }}" />
+   
+   <div class="snippet"  align="justify" >
+                <p >{{ blogs[i].blog(500) }}</p>
+                <p class="continue"><a href="{{ path('BloggerBlogBundle_blog_show', { 'id': blogs[i].id }) }}">Continue reading...</a></p>
+            </div>
+            
+              <p>Posted by <span class="highlight">{{blogs[i].author}}</span> at {{ blogs[i].created|date('h:iA') }}</p>
+    
+    
+  
+  </td>
+  <td width="30"></td>
+    <td width="405px">
+                <h2><a href="{{ path('BloggerBlogBundle_blog_show', { 'id': blogs[i+1].id }) }}">{{ blogs[i+1].title }}</a></h2>
+     <img width="100%" align="middle"  src="{{ asset(['images/', blogs[i+1].image]|join) }}" />
+      <div class="snippet"  align="justify">
+                <p  >{{ blogs[i+1].blog(500) }}</p>
+                <p class="continue"><a href="{{ path('BloggerBlogBundle_blog_show', { 'id': blogs[i+1].id }) }}">Continue reading...</a></p>
+            </div>
+   
+   <p>Posted by <span class="highlight">{{blogs[i+1].author}}</span> at {{ blogs[i+1].created|date('h:iA') }}</p>
+    
+    
+    </td>
+  </tr>
+     {% else %}
+        <p>There are no news entries </p>
+    {% endfor %}
+</table>
+
+{% endblock %}
+

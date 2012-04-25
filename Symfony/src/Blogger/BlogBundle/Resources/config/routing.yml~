@@ -1,0 +1,35 @@
+# src/Blogger/BlogBundle/Resources/config/routing.yml
+BloggerBlogBundle_homepage:
+    pattern:  /
+    defaults: { _controller: BloggerBlogBundle:Page:index }
+    requirements:
+        _method:  GET
+        
+        # src/Blogger/BlogBundle/Resources/config/routing.yml
+BloggerBlogBundle_blog_show:
+    pattern:  /{id}
+    defaults: { _controller: BloggerBlogBundle:Blog:show }
+    requirements:
+        _method:  GET
+        id: \d+
+        
+        # src/Blogger/BlogBundle/Resources/config/routing.yml
+BloggerBlogBundle_about:
+    pattern:  /about
+    defaults: { _controller: BloggerBlogBundle:Page:about }
+    requirements:
+        _method:  GET
+        
+                # src/Blogger/BlogBundle/Resources/config/routing.yml
+BloggerBlogBundle_search:
+    pattern:  /search
+    defaults: { _controller: BloggerBlogBundle:Page:search }
+    requirements:
+        _method:  GET
+        
+                       # src/Blogger/BlogBundle/Resources/config/routing.yml
+BloggerBlogBundle_index2:
+    pattern:  /index2
+    defaults: { _controller: BloggerBlogBundle:Page:index2 }
+    requirements:
+        _method:  GET

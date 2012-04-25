@@ -1,0 +1,11 @@
+{# src/Blogger/BlogBundle/Resources/views/layout.html.twig #}
+{% extends '::base.html.twig' %}
+
+{% block sidebar %}
+   Publish your own news!!
+   
+{% endblock %}
+
+{% block sidebar %}
+See what happens in your local community
+{% endblock %}
