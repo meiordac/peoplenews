@@ -1,29 +1,24 @@
-Symfony Standard Edition
+People News
 ========================
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony2
-application that you can use as the skeleton for your new app. If you want
-to learn more about the features included, see the "What's Inside?" section.
+Today's communications play a fundamental role, but at least in Chile there is a digital media and serious information that allows the active participation of the people, as most have rigid structures and just allow the participation.
 
-This document contains information on how to download and start using Symfony.
-For a more detailed explanation, see the
-[Installation chapter](http://symfony.com/doc/current/book/installation.html)
-of the Symfony Documentation.
+Our scope is that of the digital media, our goal is to reach the so-called "game news", those who do not have a formal, centralized means with the scheme of a daily, enabling them to share information of everyday events and digital reporting.
+
+Our platform is oriented to any person who likes to find out or that you would like to publish daily news of local interest, from the own point of view and not a mega corporation of news-oriented. Which publishes both which reads are users and are our main focus.
+ Our actors are also reporters who want to be known massively and that have not found a traditional medium where inserted, giving them the opportunity to become known, so are given a high priority because they will be the main creators of content.
+ Key stakeholders are us, and potential advertisers on the site, which only them will be interested in the number of visits that have and that this report them benefits.
+ 
+ # The solution
+ 
+ We created a web portal that will allow the relationship between a user and the generation of custom content knowing their data, for this relationship will use a database.
+ 
+ To identify the user, think to take advantage of connecting with external interfaces such as Facebook to acquire more data that the user shares, and thus to be able to add to our databases, and applications to deliver better service and finally allow the user to a recognition of their tastes and interests based on this relationship with the platform of this social network or others.
+ 
+ This solution allows you to read news of interest to the reader, with an added value which is freedom of the press which will open to the world, the news will no longer be something exclusively of professionals, but Los and people interested in writing and with a certain level, you can also provide information, so it is somehow democratizing.
 
 1) Download the Standard Edition
 --------------------------------
-
-If you've already downloaded the standard edition, and unpacked it somewhere
-within your web root directory, then move on to the "Installation" section.
-
-To download the standard edition, you have two options:
-
-### Download an archive file (*recommended*)
-
-The easiest way to get started is to download an archive of the standard edition
-(http://symfony.com/download). Unpack it somewhere under your web server root
-directory and you're done. The web root is wherever your web server (e.g. Apache)
-looks when you access `http://localhost` in a browser.
 
 ### Clone the git Repository
 
@@ -94,54 +89,5 @@ pages that are available in the standard edition.
 
 Once you're feeling good, you can move onto reading the official
 [Symfony2 book](http://symfony.com/doc/current/).
-
-Using this Edition as the Base of your Application
---------------------------------------------------
-
-Since the standard edition is fully-configured and comes with some examples,
-you'll need to make a few changes before using it to build your application.
-
-The distribution is configured with the following defaults:
-
-* Twig is the only configured template engine;
-* Doctrine ORM/DBAL is configured;
-* Swiftmailer is configured;
-* Annotations for everything are enabled.
-
-A default bundle, ``AcmeDemoBundle``, shows you Symfony2 in action. After
-playing with it, you can remove it by following these steps:
-
-* delete the ``src/Acme`` directory;
-* remove the routing entries referencing AcmeBundle in ``app/config/routing_dev.yml``;
-* remove the AcmeBundle from the registered bundles in ``app/AppKernel.php``;
-
-What's inside?
----------------
-The Symfony Standard Edition comes pre-configured with the following bundles:
-
-* **FrameworkBundle** - The core Symfony framework bundle
-* **SensioFrameworkExtraBundle** - Adds several enhancements, including template
-  and routing annotation capability ([documentation](http://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html))
-* **DoctrineBundle** - Adds support for the Doctrine ORM
-  ([documentation](http://symfony.com/doc/current/book/doctrine.html))
-* **TwigBundle** - Adds support for the Twig templating engine
-  ([documentation](http://symfony.com/doc/current/book/templating.html))
-* **SecurityBundle** - Adds security by integrating Symfony's security component
-  ([documentation](http://symfony.com/doc/current/book/security.html))
-* **SwiftmailerBundle** - Adds support for Swiftmailer, a library for sending emails
-  ([documentation](http://symfony.com/doc/2.0/cookbook/email.html))
-* **MonologBundle** - Adds support for Monolog, a logging library
-  ([documentation](http://symfony.com/doc/2.0/cookbook/logging/monolog.html))
-* **AsseticBundle** - Adds support for Assetic, an asset processing library
-  ([documentation](http://symfony.com/doc/2.0/cookbook/assetic/asset_management.html))
-* **JMSSecurityExtraBundle** - Allows security to be added via annotations
-  ([documentation](http://symfony.com/doc/current/bundles/JMSSecurityExtraBundle/index.html))
-* **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
-  the web debug toolbar
-* **SensioDistributionBundle** (in dev/test env) - Adds functionality for configuring
-  and working with Symfony distributions
-* **SensioGeneratorBundle** (in dev/test env) - Adds code generation capabilities
-  ([documentation](http://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html))
-* **AcmeDemoBundle** (in dev/test env) - A demo bundle with some example code
 
 Enjoy!
