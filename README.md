@@ -9,7 +9,7 @@ Our platform is oriented to any person who likes to find out or that you would l
  Our actors are also reporters who want to be known massively and that have not found a traditional medium where inserted, giving them the opportunity to become known, so are given a high priority because they will be the main creators of content.
  Key stakeholders are us, and potential advertisers on the site, which only them will be interested in the number of visits that have and that this report them benefits.
  
- # The solution
+### The solution
  
  We created a web portal that will allow the relationship between a user and the generation of custom content knowing their data, for this relationship will use a database.
  
